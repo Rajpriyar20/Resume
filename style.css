@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    background-color: bisque;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+a:hover {
+    color: rgb(71, 224, 130);
+}
+
+.resume_container {
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.resume_container .resume_container_left {
+    width: 35%;
+    background: #725ef0;
+}
+
+.resume_container .resume_container_left .profile_image {
+    width: 100%;
+}
+
+.resume_container .resume_container_left .resume_objective {
+    display: none;
+}
+
+.resume_container .resume_title {
+    color: rgb(23, 16, 48);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.resume_container .resume_container_left .resume_left_contents {
+    padding: 20px 30px;
+}
+
+.resume_container .resume_container_left .resume_content {
+    color: #04090c
+}
+
+.resume_container .resume_item {
+    padding: 20px 0;
+    border-bottom: 1px solid #222c31;
+}
+
+.resume_container .resume_container_left .resume_objective {
+    display: none;
+}
+
+.resume_container .resume_objective .name {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #233842;
+    margin-bottom: 7px;
+}
+
+.resume_container .resume_container_right {
+    width: 65%;
+    padding: 20px 40px;
+    color: rgb(20, 37, 53);
+}
+
+.resume_container .resume_container_right .resume_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume_container .resume_container_right .resume_content .duration {
+    padding-right: 35px;
+    width: 195px;
+    position: relative;
+}
+
+.resume_container .resume_container_right .resume_content .content {
+    padding-left: 35px;
+}
+
+.resume_container .resume_container_right .resume_content .resume_data {
+    line-height: 30px;
+}
+
+@media screen and (max-width:767px) {
+    .resume_container .resume_container_right .resume_objective {
+        display: none;
+    }
+    .resume_container .resume_container_left .resume_objective {
+        display: block;
+    }
+    .resume_container {
+        width: 95%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+    .resume_container .resume_container_left,
+    .resume_container .resume_container_right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:639px) {
+    .resume_container .resume_container_right {
+        padding: 20px 30px;
+    }
+    .resume_container .resume_container_right .resume_content {
+        flex-direction: column;
+    }
+    .resume_container .resume_container_right .resume_content .content {
+        width: 100%;
+        padding: 0;
+    }
+}
